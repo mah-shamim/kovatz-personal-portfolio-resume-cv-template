@@ -18,7 +18,7 @@ Table of Contents
 
 * * *
 
-### **A) Introduction** - [top](#toc)
+### **A) Introduction**
 
 Thank you so much for purchasing **KOVATZ - Personal Portfolio Resume/CV Template Html Template**. Please feel free to contact us if you have question or problem about this template. We will do our best to provide you with the best possible assistance.
 
@@ -38,7 +38,7 @@ Thank you so much for purchasing **KOVATZ - Personal Portfolio Resume/CV Templat
 
 * * *
 
-### **B) HTML Structure** - [top](#toc)
+### **B) HTML Structure**
 
 #### HTML Files
 
@@ -49,7 +49,6 @@ Thank you so much for purchasing **KOVATZ - Personal Portfolio Resume/CV Templat
 This template structure based on Bootstrap 5.0.1 Here is the sample structure.
 
 ```
-<pre class="brush: html">
 <!-- Page Layout
 ================================================== -->
 
@@ -64,34 +63,33 @@ This template structure based on Bootstrap 5.0.1 Here is the sample structure.
 	</div>
 </header>
 <!-- Header end -->
-
-</pre>
 ```
 * * *
 
-### **C) CSS Files and Structure** - [top](#toc)
+### **C) CSS Files and Structure**
 
 #### Styles
 
 ````
 <!-- CSS
 ================================================== -->
-<!-- Latest Bootstrap min CSS -->
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
-<!-- Font Awesome CSS -->
-<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-<link rel="stylesheet" href="assets/fonts/themify-icons.css">
-<!--- owl carousel Css-->
-<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
-<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">		
-<!-- venobox CSS -->		
-<link rel="stylesheet" href="assets/css/venobox.css">							
-<!-- Style CSS -->
-<link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons.css">
+    <!--- owl carousel Css-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">		
+    <!-- venobox CSS -->		
+    <link rel="stylesheet" href="assets/css/venobox.css">							
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 ````
+
 All css files are separates for improving convenience to edit this template.
 
 Some of stylesheets contain _Table of content_ for easy navigation, for instance **style.css**:
@@ -113,7 +111,7 @@ Some of stylesheets contain _Table of content_ for easy navigation, for instance
 
 * * *
 
-### **D) JavaScript** - [top](#toc)
+### **D) JavaScript**
 
 This theme imports Javascript files.
 
@@ -140,17 +138,17 @@ This theme imports Javascript files.
 
 * * *
 
-### **E) Fonts Used** - [top](#toc)
+### **E) Fonts Used**
 
 I have used Exo font in this template.
 
-1.  [Exo](#) - Google Web Font
+1.  Google Web Font
 
 
 
 * * *
 
-### **G) Sources and Credits** - [top](#toc)
+### **G) Sources and Credits**
 
 *   Bootstrap
 *   jQuery
@@ -161,9 +159,7 @@ I have used Exo font in this template.
 
 * * *
 
-* * *
-
-### **H) FAQ** - [top](#toc)
+### **H) FAQ**
 
 1) This template main color is - #474ff3. if you want to change this color. just replace it with your own color. you can change color from style.css file
 
@@ -172,7 +168,5 @@ I have used Exo font in this template.
 * * *
 
 Once again, thank you so much for purchasing this template. I'd be glad to help you if you have any questions relating to this template. I'll do my best to assist.
-
-[Go To Table of Contents](#toc)
 
 * * *
