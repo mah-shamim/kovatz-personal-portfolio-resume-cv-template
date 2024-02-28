@@ -1,0 +1,1383 @@
+/*
+Author       : theme_ocean
+Template Name: Adil - Personal Portfolio & Resume/CV Template
+Version      : 1.0
+*/
+/*=============================================================
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+    02. START MENU STYLE
+    03. START ABOUT CSS STYLE
+    04. START RESUME STYLE
+    05. START PORTFOLIO STYLE
+    06. START BLOG DESIGN
+    07. START CONTACT STYLE
+    08. START FOOTER AND SOCIAL STYLE
+    09. START EXTRA STYLE
+  =============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+body {
+color: #444;
+font-family: 'Exo', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+background:#dff4e4;
+overflow-x:hidden;
+background-size: cover;
+}
+
+
+html,
+body { height: 100%;position:relative;  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0px;
+  margin-top: 0px;
+  font-family: 'Exo', sans-serif;
+  color: #232a34;
+  font-weight: 400;
+}
+a {
+	font-family: 'Exo', sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #232a34;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+	list-style:none;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+b, strong {
+	font-weight: 600;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+	background:#dff4e4;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;	
+}
+.spinner {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	font-size: 10px;
+	text-indent: -12345px;
+	z-index: 10000;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #474ff3;
+  opacity: 0.6;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+.no-padding { padding: 0 }
+
+::-moz-placeholder { 
+  color: #fff;
+}
+
+/*END PRELOADER DESIGN*/
+.section-padding { padding: 80px 0 }
+/*START SECTION TITLE DESIGN*/
+.section-title {
+margin-bottom:30px;
+text-align:center;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 600;
+}
+.section-title h4::after {
+	content: "";
+	background: -o-radial-gradient(left,ellipse,#ddd 0%,rgba(255,255,255,0) 70%);
+	background: #474ff3;
+	width: 200px;
+	height: 2px;
+	display: block;
+	margin-top: 5px;
+	width: 50px;
+	margin: auto;
+	margin-top: 10px;
+}
+.page_heading {
+	margin-bottom: 50px;
+}
+.page_heading h1{
+	text-transform: capitalize;
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.page_heading h1::after {
+	content: "";
+	background:#474ff3;
+	width: 60px;
+	height: 2px;
+	display: block;
+	margin-top: 20px;
+	margin: auto;
+	margin-top: 10px;
+}
+/*END SECTION TITLE DESIGN*/
+.padding-50{padding-top:50px;}
+.padding-40{padding-top:40px;}
+.padding-30{padding-top:30px;}
+.padding-20{padding-top:20px;}
+.padding-10{padding-top:10px;}
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02. START LEFT SIDEBAR STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.left-panel {
+	padding: 30px;
+	margin-top: 50px;
+	border-right: 1px solid #fff;
+	height: 82vh;
+	overflow-y: scroll;
+}
+@media screen and (max-width:800px){
+.left-panel {height:420px;}
+}
+@media screen and (max-width:768px){
+.left-panel {height:420px;}
+}
+@media screen and (max-width:736px){
+.left-panel {height:420px;}
+}
+@media screen and (max-width:568px){
+.left-panel {height:420px;}
+}
+.logo_area{
+text-align:center;
+margin-bottom: 40px;
+}
+.logo-img {
+	display: block;
+}
+.logo-img img {
+	width: 120px;
+	border-radius: 50%;
+	border: 10px solid rgba(255,255,255,0.6);
+}
+.logo_area h4 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+/*START MENU STYLE*/
+ul.tab-buttons {
+	margin-bottom: 40px;
+}
+@media screen and (max-width:880px){
+ul.tab-buttons{display:none;}
+}
+ul.tab-buttons li.selected a{color:#474ff3;}
+.tab-buttons li {
+	line-height: 32px;
+}
+.tab-buttons li span{display: block;}
+.tab-buttons li a {
+	display: inline-block;
+	font-size: 16px;
+	text-decoration: none;
+	color: #767676;
+	text-align: center;
+	transition: 0.3s;
+	padding: 10px 0px;
+}
+.tab-buttons li a i{margin-right:10px;}
+.tab-buttons li a:hover {}
+/*START MOBILE MENU*/
+.tab-buttons-mobile{display:none;}
+ul.tab-buttons-mobile{text-align:center;}
+ul.tab-buttons-mobile li {display: inline-block;}
+.tab-buttons-mobile li a span{
+font-size: 30px;
+margin: 0 5px;
+}
+ul.tab-buttons-mobile li.selected a{color:#474ff3;}
+@media screen and (max-width:880px){
+.logo-img {text-align:center;margin-bottom:20px;}
+.tab-buttons-mobile{display:block !important;}
+.left-panel {height:22vh;}
+}
+/*END MOBILE MENU*/
+/*END MENU STYLE*/
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {
+margin-bottom:20px;
+overflow: hidden;
+}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.social_profile ul li{display: inline-block;}
+.social_profile ul li a {
+	background: #fff;
+	text-align: center;
+	border: 0px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	font-size: 16px;
+	/* color: #fff; */
+	display: block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 5px;
+	box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+}
+@media only screen and (max-width:768px) { 
+.social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a{
+	width:40px;
+	height:40px;
+	line-height:40px;
+}
+}
+.social_profile ul li a:hover{
+color:#fff;
+}
+.f_facebook{color:#3B5998;}
+.f_facebook:hover{background:#3B5998;}
+.f_twitter{color:#1A90D9;}
+.f_twitter:hover{background:#1A90D9;}
+.f_instagram{color:#FF5252;}
+.f_instagram:hover{background:#FF5252;}
+.f_linkedin{color:#0e76a8;}
+.f_linkedin:hover{background:#0e76a8;}
+.f_tumblr{background:#36465D;}
+.f_tumblr:hover{background:#36465D;}
+/*END SOCIAL PROFILE CSS*/
+.copyright{text-align: center;}
+@media screen and (max-width:480px){
+.copyright{display:none;text-align: center;}
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02. END LEFT SIDEBAR STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03. START RIGHT SIDEBAR STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.tab-container {	
+	border-radius: 2px;
+	height: 82vh;
+	padding: 30px;
+	overflow-y: scroll;
+	margin-top: 50px;
+	border:1px solid #fff;
+}
+@media screen and (max-width:480px){
+.tab-container{margin-bottom:40px;}
+}
+#tab-box .tab-container > div{display: none;}
+.tab-container p{}
+/*
+* ----------------------------------------------------------------------------------------
+* 03. END RIGHT SIDEBAR STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03. START HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.about_me{
+text-align: center;
+position:relative;
+}
+.about_me img {
+	width:250px;
+	height:250px;
+	border-radius: 500px;
+	-webkit-box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	        box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	border: 14px solid rgba(255,255,255,0.4);
+	position:relative;
+}
+.about_me a {
+	position: absolute;
+	background:#474ff3;
+	color:#fff;
+	padding: 10px 20px;
+	top: 70%;
+	right: 25%;
+	font-weight: 500;
+	border-radius: 30px;
+	opacity:1;
+	transition: 0.3s;
+}
+.about_me:hover a{
+opacity:1;
+}
+@media screen and (max-width:480px){
+.about_me img {
+	width: 100%;
+	height: auto;
+}
+}
+.about_me_content{padding-top:30px;}
+@media only screen and (max-width:768px) { 
+.about_me_content{padding-left:30px;padding-right: 20px;}
+}
+.about_me_content h5 {
+	font-weight: 400;
+	margin-bottom: 10px;
+	display: block;
+	text-transform: capitalize;
+	font-size: 15px;
+	opacity: .55;
+}
+.about_me_content h3 {
+	font-size: 44px;
+	font-style: normal;
+	text-transform: capitalize;
+	margin-bottom:15px;
+}
+.about_me_content h3 span{font-weight:700}
+@media only screen and (max-width:768px) { 
+.about_me_content h3{font-size: 26px;}
+}
+.about_me_content p{padding-right:20px;}
+@media only screen and (max-width:768px) { 
+.about_me_content p{padding-right:0px;}
+}
+.about_me_content h1{
+font-family: 'Sacramento', cursive;
+margin-top: 10px;
+}
+.home_btn{margin-top:25px;}
+
+.home_btn a {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.download_btn {
+	border: 2px solid #474ff3;
+	color: #232434;
+	padding: 8px 26px;
+	border-radius: 30px;
+	font-size: 12px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	background: none;
+	-webkit-box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+}
+.download_btn:hover{
+	border:2px solid #474ff3;
+	color: #fff;
+	background:#474ff3;
+}
+
+/*START WHAT I DO*/
+.single_about{margin-bottom:30px}
+.single_about span {
+	float: left;
+	background: rgba(255, 255, 255, 0.4);
+	color: #232a34;
+	font-size: 22px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 10px;
+}
+.single_about h4 {
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.single_about p{overflow:hidden;}
+/*END WHAT I DO*/
+
+/*START TESTIMONIAL*/
+.testimonial{
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 30px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+}
+.testimonial-title h2{
+font-size: 30px;
+line-height: 46px;
+margin: auto auto 60px;
+width: 70%;		
+}
+@media only screen and (max-width:768px) { 
+.testimonial-title h2{
+padding:0px 10px;
+width: 100%;	
+}
+}
+
+.testimonial .icon {
+	display: inline-block;
+	font-size: 40px;
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 10px;
+}
+.testimonial .description {
+	text-align: left;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.testimonial .pic {
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 5px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.testimonial .pic img{
+    width: 90px;
+    height: auto;
+}
+.testimonial .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 12px;
+    color: #474ff3;
+}
+
+@media only screen and (max-width: 650px) and (min-width: 400px){
+    .testimonial:before{ border-right: 325px solid transparent; }
+    .testimonial:after{ border-left: 325px solid transparent; }
+}
+.owl-theme{-webkit-transition:0.4s;-o-transition:0.4s;transition:0.4s;}
+.owl-theme .owl-controls{
+    width: 100%;
+    height: 50px;
+	display: block!important;
+    opacity: 1;
+    position: absolute;
+    top: -22%;
+	-webkit-transition:0.4s;
+	-o-transition:0.4s;
+	transition:0.4s;
+}
+.owl-theme .owl-controls .owl-buttons div {
+	width: 36px;
+	height: 36px;
+	line-height: 32px;
+	opacity: 1;
+	border-radius: 3px;
+	background: rgba(255, 255, 255, 0.4);
+	border:1px solid rgba(255, 255, 255, 0.4);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+	-webkit-box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	        box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover{
+background:#fff;
+border:1px solid #eee;
+display:block;
+}
+.owl-prev{
+    position: absolute;
+    left:88%;
+}
+.owl-next{
+    position: absolute;
+    right: 1%;
+}
+.owl-prev:after,
+.owl-next:after{
+    content: "\f104";
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    color: #232a34;
+    opacity: 1;
+}
+.owl-next:after{ content: "\f105"; }
+@media only screen and (max-width: 768px){
+    .owl-theme .owl-controls{ margin-top: 20px; }
+	 .owl-theme .owl-controls{display:none!important; }
+}
+/*END TESTIMONIAL*/
+
+.partner_logo img {width: 100px;}
+@media screen and (max-width:480px){
+.partner_logo {
+	text-align: center;
+	margin-bottom: 20px;
+}
+}
+/*START PRICING PLAN*/
+.pricingTable{
+    background:rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 0 0 30px;
+    border-radius: 40px;
+}
+.pricingTable .pricingTable-header{
+    background: rgba(255, 255, 255, 0.4);
+    padding:25px 0 20px;
+    margin: 0 auto 40px;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+}
+.pricingTable .pricingTable-header:after{
+    content: "";
+    background: rgba(255, 255, 255, 0.4);
+    background-repeat: repeat-x;
+    background-size: 22px;
+    width: 100%;
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+}
+.pricingTable .title {
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin: 0;
+}
+.pricingTable .price-value{
+    margin: 0 0 20px;
+}
+.pricingTable .price-value .amount {
+	font-size:54px;
+	font-weight: 500;
+	line-height: 60px;
+	display: block;
+	color: #232434;
+}
+.pricingTable .price-value .duration{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+}
+.pricingTable .pricing-content{
+    padding: 0 20px;
+    margin: 0 0 30px;
+    list-style: none;
+}
+.pricingTable .pricing-content li {
+	text-align: center;
+	text-transform: capitalize;
+	padding: 10px 15px 10px 50px;
+	position: relative;
+}
+.pricingTable .pricing-content li:nth-child(odd){ background: rgba(255, 255, 255, 0.4); }
+.pricingTable .pricingTable-signup a {
+	color: #232434;
+	background: none;
+	font-size: 14px;
+	text-transform: capitalize;
+	padding: 8px 30px;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	border: 2px solid #232434;
+	transition: 0.3s;
+}
+.pricingTable .pricingTable-signup a:hover{
+color: #fff;
+background: #474ff3;
+border: 2px solid #474ff3;
+}
+.pricingTable.red .pricingTable-header{ background: #d83b50; }
+.pricingTable.red .pricingTable-header:after{
+    background: rgba(255, 255, 255, 0.4);
+    background-size: 22px;
+}
+.pricingTable.red .pricingTable-signup a{ background: #d83b50; }
+.pricingTable.orange .pricingTable-header{ background: #e0681e; }
+.pricingTable.orange .pricingTable-header:after{
+    background: rgba(255, 255, 255, 0.4);
+    background-size: 22px;
+}
+.pricingTable.orange .pricingTable-signup a{ background: #e0681e; }
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 30px; }
+}
+/*END PRICING PLAN*/
+/*START FUN FACTS*/
+.single-project-complete {
+	text-align: center;
+	border-right: 1px solid #ddd;
+}
+@media screen and (max-width:812px){
+.single-project-complete {margin-bottom:30px;}
+}
+.single-project-complete-last{border-right:0px;}
+.single-project-complete h2 {
+	font-size: 40px;
+	font-weight: 600;
+}
+.single-project-complete h3{font-size: 16px;}
+/*END FUN FACTS*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03. END HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04. START RESUME PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*START EDUCATION & EXPERIENCE STYLE*/
+.timeline_title {
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom:30px;
+}
+.timeline_title::after {
+	content: "";
+	background: -o-radial-gradient(left,ellipse,#474ff3 0%,rgba(255,255,255,0) 70%);
+	background: radial-gradient(ellipse at left,#474ff3 0%,rgba(255,255,255,0) 70%);
+	width: 200px;
+	height: 2px;
+	display: block;
+	margin-top: 5px;
+}
+.single_timeline {
+	border: 1px solid #eee;
+	padding:40px 20px;
+	margin-bottom: 30px;
+	position: relative;
+	z-index: 1;
+	box-shadow:0 10px 40px -10px rgba(0,64,128,.1);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.single_timeline:hover{
+	border: 1px solid #eee;
+	-webkit-box-shadow:0 10px 40px -10px rgba(0,64,128,.2);
+	        box-shadow:0 10px 40px -10px rgba(0,64,128,.2);
+}
+.single_timeline h4 {
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom:15px;
+}
+.single_timeline span {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.active_year {
+	color: #232a34;
+	font-weight: 500;
+	border: 2px solid #eee;
+	padding: 0px 10px;
+	border-radius: 2px;
+}
+.active_company {
+	opacity: 0.6;
+}
+.single_timeline p{}
+/*END EDUCATION & EXPERIENCE STYLE*/
+/*START DESIGNING AND CODING SKILLS STYLE*/
+.progress-bar-linear {
+	margin-right: 40px;
+}
+.progress-bar-text {
+	font-size:14px;
+	margin-bottom:10px;
+	text-transform:capitalize;
+	font-weight:600;
+}
+.progress {
+	margin-bottom: 10px;
+	background: rgba(255,255,255,0.4);
+}
+.progress-bar {
+    background: #474ff3 none repeat scroll 0 0;
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+    height:15px;
+    margin: 0 0 20px;
+	border-radius: 30px;
+    position: relative;
+    width: 100%;
+}
+/*END DESIGNING AND CODING SKILLS STYLE*/
+/* START KNOWLEDGE AND ABOUT ME VIDEO*/
+.knowledge {
+	overflow: hidden;
+}
+.knowledge ul {list-style:none;}
+.knowledge ul li {
+	background: #474ff3;
+	border:1px solid #474ff3;
+	float: left;
+	color: #fff;
+	padding: 5px 16px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	text-transform: capitalize;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.knowledge ul li:hover{
+    background: #fff;
+	-webkit-box-shadow:0 10px 40px -10px rgba(0,64,128,.2);
+	        box-shadow:0 10px 40px -10px rgba(0,64,128,.2);
+	color:#232a34;
+	border:1px solid #eee;
+}
+.my_video {}
+.my_video iframe {
+	width: 100%;
+	height: 250px;
+	background:rgba(255,255,255,0.4);
+	padding: 10px;
+	box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+}
+/* END KNOWLEDGE AND ABOUT ME VIDEO*/
+/*
+* ----------------------------------------------------------------------------------------
+* 04. END RESUME PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05. START PORTFILIO PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.box{
+     background:rgba(0,0,0,0.99);
+     overflow: hidden;
+     position: relative;
+	 margin-bottom:30px;
+	 border-radius: 10px;
+     -webkit-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+ }
+ .box img{
+     width: 100%;
+     height: auto;
+     -webkit-transform: scale(1.1) translateX(4%);
+         -ms-transform: scale(1.1) translateX(4%);
+             transform: scale(1.1) translateX(4%);
+     -webkit-transition: all 0.4s ease-in-out;
+     -o-transition: all 0.4s ease-in-out;
+     transition: all 0.4s ease-in-out;
+ }
+ .box:hover img{
+     opacity:0.4;
+     -webkit-transform: scale(1.1) translateX(-4%);
+         -ms-transform: scale(1.1) translateX(-4%);
+             transform: scale(1.1) translateX(-4%);
+ }
+ .box .box-content{
+     color: #fff;
+     opacity: 0;
+     -webkit-transform: translateX(20%);
+         -ms-transform: translateX(20%);
+             transform: translateX(20%);
+     position: absolute;
+     top: 30px;
+     left: 33px;
+     -webkit-transition: all 0.3s ease-out;
+     -o-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+ }
+ .box:hover .box-content{
+     opacity: 1;
+     -webkit-transform: translateX(0);
+         -ms-transform: translateX(0);
+             transform: translateX(0);
+     -webkit-transition-delay: 0.3s;
+          -o-transition-delay: 0.3s;
+             transition-delay: 0.3s;
+ }
+.box .title {
+	font-size: 22px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+	color: #fff;
+}
+ .box .post{
+     font-size: 14px;
+     font-weight: 400;
+     text-transform: capitalize;
+ }
+ .box .icon{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     opacity: 0;
+     -webkit-transform: translateX(-20%);
+         -ms-transform: translateX(-20%);
+             transform: translateX(-20%);
+     position: absolute;
+     bottom: 33px;
+     right: 30px;
+     z-index: 1;
+     -webkit-transition: all 0.3s ease-out;
+     -o-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+ }
+ .box:hover .icon{
+     opacity: 1;
+     -webkit-transform: translateX(0);
+         -ms-transform: translateX(0);
+             transform: translateX(0);
+     -webkit-transition-delay: 0.3s;
+          -o-transition-delay: 0.3s;
+             transition-delay: 0.3s;
+ }
+ .box .icon li{
+     margin: 0 2px;
+     display: inline-block;
+ }
+.box .icon li a {
+	color: #474ff3;
+	background: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	width: 40px;
+	border: 1px solid #fff;
+	display: block;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	border-radius: 30px;
+	font-weight: ;
+}
+ .box .icon li a:hover{
+     color: #fff;
+     background:#474ff3;
+	 border: 1px solid #474ff3;
+ }
+ @media only screen and (max-width:990px){
+     .box{ margin: 0 0 30px; }
+ }
+ /*project modal*/
+.modal-title {
+color: #333;
+margin: 0;
+display:none;
+text-transform: uppercase;
+font-size: 20px;
+font-weight: 600;
+}
+.modal-content {
+border-radius: 0;
+margin-top: 100px;
+padding: 10px 30px;
+}
+.modal-body { margin-bottom: 15px }
+.modal-body p { margin: 15px 0 0 }
+.project-list { margin-top: 30px }
+.project-list label {
+	color: #333;
+	margin-bottom: 0;
+	margin-right: 0;
+	width: 120px;
+}
+.project-list li {
+    padding: 7px 0;
+    font-size: 14px;
+}
+.project-list li a {
+    color: #333;
+    margin-bottom: 0;
+    margin-right: 7px;
+    width: 125px;
+}
+.project-list li a:hover { color: #474ff3; }
+/*End project modal*/
+/*
+* ----------------------------------------------------------------------------------------
+* 05. END PORTFILIO PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06. START BLOG PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.bottom_bnone {
+	margin-bottom: -30px;
+}
+.single_blog {
+	background:rgba(255,255,255,0.4);
+	-webkit-box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	        box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	margin-bottom: 30px;
+	border: 1px solid #eee;
+	border-radius: 0px 10px 10px 10px;
+}
+@media only screen and (max-width:768px) { 
+.single_blog {margin-bottom:30px;}
+}
+.blog_content{padding:30px;}
+.blog-img{position: relative;}
+.blog-img img{position: relative;}
+@media only screen and (max-width:768px) { 
+.blog-img img{width:100%;}
+}
+.blog-img a {
+	position: absolute;
+	left: 8%;
+	top: 80%;
+	background: #474ff3;
+	padding: 6px 15px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 14px;
+}
+@media only screen and (max-width:768px) { 
+.blog-img a {
+	top: 5%;
+	left: 6%;
+}
+}
+.single_blog h2 {
+	line-height: 32px;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.single_blog h2 a {
+	color: #232a34;
+	font-weight: 600;
+}
+.single_blog p{margin-bottom:20px;}
+.single_blog h2 a:hover{color:#474ff3;}
+.single_blog span {
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	display: inline-block;
+	font-weight: 500;
+	margin-right: 20px;
+	color: rgba(0,0,0,0.6);
+	margin-top: 12px;
+}
+@media screen and (max-width:480px){
+.single_blog span {margin-right:15px;}
+}
+@media screen and (max-width:414px){
+.single_blog span {
+	margin-right: 5px;
+	font-size: 12px;
+}
+}
+.single_blog span a{color:#474ff3;}
+.single_blog > a{margin-bottom: 30px;}
+.blog_content a {
+	color: #474ff3;
+	font-weight: 500;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+/*START SINGLE PAGE BLOG STYLE*/
+.single_blog_page{}
+.single_blog_page img {
+	margin-bottom: 30px;
+}
+.single_blog_page p{margin-bottom: 30px;}
+.text-italic {
+	font-style: italic;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 26px;
+}
+/*END SINGLE PAGE BLOG STYLE*/
+/*
+* ----------------------------------------------------------------------------------------
+* 06. END BLOG PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.START CONTACT PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.contact {margin-top: 50px;}
+@media only screen and (max-width:768px) { 
+.contact {margin-bottom:60px;margin-right:0px;}
+}
+.contact input {
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	color: #1d1e20;
+	font-size: 16px;
+	font-weight: 400;
+	height: 52px;
+	padding: 10px;
+	width: 100%;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	margin-bottom:10px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.contact textarea {
+	background: rgba(255, 255, 255, 0.4);
+	border-radius:5px;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	color: #1d1e20;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px;
+	width: 100%;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	margin-bottom:10px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.contact input:focus {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+	color: #1d1e20;
+	background:#fff;
+    outline: 0 none;
+}
+.contact textarea:focus {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: 0 none;
+	color: #1d1e20;
+	background:#fff;
+}
+
+.contact button {
+	font-size: 16px;
+	background: #474ff3;
+	color: #fff;
+	padding: 12px 30px;
+	border: 1px solid #474ff3;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	border-radius: 3px;
+}
+.contact button:hover{
+background:#232a34;
+color:#fff;
+border: 1px solid #232a34;
+}
+.address_area{padding-bottom:80px;}
+.single_address {
+	background:rgba(255,255,255,0.4);
+	padding: 40px;
+	border-radius: 5px;
+	-webkit-box-shadow:0 10px 40px -10px rgba(0,64,128,.2);
+	        box-shadow:0 10px 40px -10px rgba(0,64,128,.2);
+}
+@media screen and (max-width:768px){
+.single_address {margin-top:30px;}
+}
+.single_address{
+padding:40px 20px;
+text-align:center;
+}
+.single_address span {
+	font-size: 36px;
+	text-align: center;
+	display: inline-block;
+	color: #474ff3;
+	margin-bottom: 20px;
+}
+.single_address h4 {font-weight: 600;font-size: 20px;}
+.single_address p{}
+.map{}
+.map iframe {
+	width: 100%;
+	height:300px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 07.END CONTACT PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.START FOOTER AND SOCIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.thank-you-page{padding-top:80px;}
+.thank-you-page h1 {
+	font-weight: 600;
+	margin-bottom: 40px;
+	line-height: 52px;
+}
+
+.back-home {
+	border: 1px solid #474ff3;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 0px;
+	font-size: 14px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	background: #474ff3;
+	-webkit-box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	        box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+}
+.back-home:hover{
+	border: 1px solid #232a34;
+	color: #fff;
+	background:#232a34;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.END FOOTER AND SOCIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.START EXTRA PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.my_interest{margin-bottom: 30px;}
+.my_interest p{margin-bottom: 20px;}
+.my_interest button img{width:100%;}
+.my_interest button{margin-right:10px;}
+/*START TOOLTIP*/
+.toolTip {
+	background: rgba(255,255,255,0.4);
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 55px;
+	height: 55px;
+	width: 55px;
+	padding: 0;
+	border-radius: 50%;
+	box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	position: relative;
+	transition: all 0.3s ease 0s;
+	border: 1px solid #eee;
+}
+.toolTip:hover,
+.toolTip:focus{
+    color: #fff;
+    background: #474ff3;
+    outline: none;
+}
+.toolTip::before {
+	content: attr(data-tip);
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 0px;
+	height: 40px;
+	width: 80px;
+	padding: 22px 10px;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	white-space: normal;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.toolTip:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+.toolTip.top:before{
+    transform: translateX(-50%) scale(0.5);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+.toolTip.top:hover:before{
+    transform: translateX(-50%) scale(1);
+    bottom: 85%;
+}
+.toolTip.left:before{
+    transform: translateY(-50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.toolTip.left:hover:before{
+    transform: translateY(-50%) scale(1);
+    right: 85%;
+}
+.toolTip.right:before{
+    transform: translateY(-50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.toolTip.right:hover:before{
+    transform: translateY(-50%) scale(1);
+    left: 85%;
+}
+.toolTip.bottom:before{
+    transform: translateX(-50%) scale(0.5);
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.toolTip.bottom:hover:before{
+    transform: translateX(-50%) scale(1);
+    top: 85%;
+}
+/*END TOOLTIP*/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #495057;
+	background-color: rgba(255,255,255,0.4);
+	border-color: #dee2e6 #dee2e6 #fff;
+}
+.accordion-item {
+	background-color: rgba(255,255,255,0.4);
+	border: 1px solid rgba(0,0,0,.125);
+}
+/*START FAQ*/
+
+/*END FAQ*/
+
+/*START FONTAWESOME ICONS*/
+.fontawesome-icon-list{}
+.fontawesome-icon-list a {
+	color: #232a34;
+	line-height: 34px;
+	transition: 0.3s;
+}
+.fontawesome-icon-list a:hover{color:#474ff3;}
+.fontawesome-icon-list a i{}
+/*END FONTAWESOME ICONS*/
+/*
+* ----------------------------------------------------------------------------------------
+* 09.END EXTRA PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
