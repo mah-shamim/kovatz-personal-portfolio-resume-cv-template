@@ -48,7 +48,7 @@ Thank you so much for purchasing **KOVATZ - Personal Portfolio Resume/CV Templat
 
 This template structure based on Bootstrap 5.0.1 Here is the sample structure.
 
-```
+~~~~
 <!-- Page Layout
 ================================================== -->
 
@@ -63,14 +63,14 @@ This template structure based on Bootstrap 5.0.1 Here is the sample structure.
 	</div>
 </header>
 <!-- Header end -->
-```
+~~~~
 * * *
 
 ### **C) CSS Files and Structure**
 
 #### Styles
 
-````
+~~~~
 <!-- CSS
 ================================================== -->
     <!-- Latest Bootstrap min CSS -->
@@ -88,13 +88,13 @@ This template structure based on Bootstrap 5.0.1 Here is the sample structure.
     <link rel="stylesheet" href="assets/css/venobox.css">							
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-````
+~~~~
 
 All css files are separates for improving convenience to edit this template.
 
 Some of stylesheets contain _Table of content_ for easy navigation, for instance **style.css**:
 
-````
+~~~~
 /* Table of Content for landing
 ==================================================
     01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
@@ -107,7 +107,7 @@ Some of stylesheets contain _Table of content_ for easy navigation, for instance
     08. START FOOTER AND SOCIAL STYLE
     09. START EXTRA STYLE
 */
-````
+~~~~
 
 * * *
 
@@ -115,7 +115,7 @@ Some of stylesheets contain _Table of content_ for easy navigation, for instance
 
 This theme imports Javascript files.
 
-````
+~~~~
 <!-- Javascript Files
 ================================================== -->
 	
@@ -134,7 +134,7 @@ This theme imports Javascript files.
 	<!-- scripts js -->
 		<script src="assets/js/tab-menu.js"></script>	
 		<script src="assets/js/scripts.js"></script>
-````
+~~~~
 
 * * *
 
